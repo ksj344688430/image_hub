@@ -1,2 +1,2 @@
-# doc_hub
-文档库
+# image_hub
+图片库
