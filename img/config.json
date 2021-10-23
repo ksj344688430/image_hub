@@ -1,0 +1,120 @@
+{
+"id": "plu_modbus_rtu",
+"version": "20.19.8",
+"name": "plu_modbus_rtu",
+"explain": "plu_modbus_rtu的协议库描述",
+"versionExplain": [
+    "1. 修改了XXX", 
+    "2. 修改UIBUG"
+],
+"dataList":
+[
+  {"addr": "400001", "name": "温度", "type":"short"},
+  {"addr": "400002", "name": "湿度", "type":"short"},
+  {"addr": "400003", "name": "电压", "type":"short"},
+  {"addr": "400004", "name": "电流", "type":"short"}
+],
+"attrCfg":
+[
+	{
+    "id": "regFormat",
+    "name": "串口",
+    "type": 105,
+    "value": {
+        value:"COM1",
+        table:[
+            {name:"COM1",  value:"COM1"},
+            {name:"COM2",  value:"COM2"},
+            {name:"COM3",  value:"COM3"}    
+        ]
+    },
+    "explain": "串口",
+    "hide": 0,
+    "onlyRead": 0,
+    "verifier": "",
+    "verifierErrorAlert": "",
+    "depends": []
+    },
+    {
+    "id": "regFormat",
+    "name": "波特率",
+    "type": 105,
+    "value": {
+        value:"9600",
+        table:[
+            {name:"2400",  value:"2400"},
+            {name:"4800",  value:"4800"},
+            {name:"9600",  value:"9600"},
+            {name:"14400",  value:"14400"},
+            {name:"19200",  value:"19200"},
+            {name:"38400",  value:"38400"}
+        ]
+    },
+    "explain": "波特率",
+    "hide": 0,
+    "onlyRead": 0,
+    "verifier": "",
+    "verifierErrorAlert": "",
+    "depends": []
+    },
+    {
+    "id": "regFormat",
+    "name": "停止位",
+    "type": 105,
+    "value": {
+        value:"1",
+        table:[
+            {name:"1",  value:"1"},
+            {name:"1.5",  value:"1.5"},
+            {name:"2",  value:"2"}
+        ]
+    },
+    "explain": "停止位",
+    "hide": 0,
+    "onlyRead": 0,
+    "verifier": "",
+    "verifierErrorAlert": "",
+    "depends": []
+    },
+   {
+    "id": "regFormat",
+    "name": "数据位",
+    "type": 105,
+    "value": {
+        value:"8",
+        table:[
+            {name:"8",  value:"8"},
+            {name:"7",  value:"7"},
+            {name:"6",  value:"6"},
+            {name:"5",  value:"5"},
+        ]
+    },
+    "explain": "数据位",
+    "hide": 0,
+    "onlyRead": 0,
+    "verifier": "",
+    "verifierErrorAlert": "",
+    "depends": []
+    },
+	{
+    "id": "regFormat",
+    "name": "校验位",
+    "type": 105,
+    "value": {
+        value:"One",
+        table:[
+            {name:"None",  value:"None"},
+            {name:"One",  value:"One"},
+            {name:"Two",  value:"Two"},
+            {name:"OnePointFive",  value:"OnePointFive"},
+        ]
+    },
+    "explain": "校验位",
+    "hide": 0,
+    "onlyRead": 0,
+    "verifier": "",
+    "verifierErrorAlert": "",
+    "depends": []
+    }
+]
+}
